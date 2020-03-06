@@ -27,10 +27,10 @@ include "includes/header.php";
      }
 
      $count = mysqli_num_rows($search_query);
+
      if($count == 0){
          echo "<h1>No Result Found!</h1>";
-     }else {
-        
+     }else {        
              while($row = mysqli_fetch_assoc($search_query)){
                  $post_title = $row["post_title"];
                  $post_author = $row["post_author"];
