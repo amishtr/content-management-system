@@ -1,8 +1,8 @@
-<?php
+<?php include "functions.php"; ?>
+<?php include "../includes/db.php"; ?>
 
-ob_start();
-include "../includes/db.php"; 
-?>
+<?php ob_start(); ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
