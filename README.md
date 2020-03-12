@@ -1,6 +1,6 @@
 # Content Management System (CMS)
 
-Created by: Amish Trivedi | Last Updated Date: 27-Jan-2020
+Created by: Amish Trivedi | Last Updated Date: 12-March-2020
 
 ## Overview:
 The aplication provides a blogging system - front end platform to users i.e. writing post(s), comment(s), uploading image(s) etc. The system is developed using PHP and MySQL database.
