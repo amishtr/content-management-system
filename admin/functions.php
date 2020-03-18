@@ -5,6 +5,7 @@ $cat_error = "";
 function insert_categories() {
 
     global $connection;  
+    $cat_error = "";
 
     if(isset($_POST['submit'])) {
 
