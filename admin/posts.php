@@ -27,6 +27,11 @@
                         }
 
                         switch($source) {
+
+                            case 'add_posts';
+                            include "includes/add_posts.php";
+                            break;
+
                             case '100';
                             echo "Wrong case 100!";
                             break;
@@ -36,7 +41,7 @@
                             break;
 
                             default:
-                            include "includes/view_all_posts.php";
+                            
                         }
                     ?>
 
