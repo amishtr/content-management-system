@@ -1,3 +1,27 @@
+<?php
+
+if(isset($_GET['p_id'])) {
+    $get_post_id = $_GET['p_id'];
+}
+
+$query = "SELECT * FROM posts";
+$select_posts_by_id = mysqli_query($connection, $query); 
+
+while($row = mysqli_fetch_assoc($select_posts_by_id)) {
+
+    $post_id = $row['post_id'];    
+    $post_author = $row['post_author']; 
+    $post_title = $row['post_title']; 
+    $post_category = $row['post_category_id']; 
+    $post_status = $row['post_status']; 
+    $post_image = $row['post_image']; 
+    $post_tags = $row['post_tags']; 
+    $post_comments = $row['post_comment_count']; 
+    $post_date = $row['post_date']; 
+
+?>
+
+
 <form action="" method="POST" enctype="multipart/form-data">
 
   <div class="form-group">
@@ -12,7 +36,7 @@
 
   <div class="form-group">
     <label for="post_author">Post Author</label>
-    <input type="text" name="post_author" class="form-control" id="" aria-describedby="" placeholder="Enter post author">
+    <input value="<?php echo $post_author; ?>" type="text" name="post_author" class="form-control" id="" aria-describedby="">
   </div>
 
   <div class="form-group">

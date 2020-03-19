@@ -11,6 +11,7 @@
                                 <th class='text-center'>Comments</th>
                                 <th class='text-center'>Date</th>
                                 <th class='text-center'></th>
+                                <th class='text-center'></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -41,6 +42,7 @@
                                     echo "<td class='text-center'>{$post_tags}</td>"; 
                                     echo "<td class='text-center'>{$post_comments}</td>"; 
                                     echo "<td class='text-center'>{$post_date}</td>"; 
+                                    echo "<td class='text-center'><a href='posts.php?source=edit_post&p_id={$post_id}'>Edit</td>";
                                     echo "<td class='text-center'><a href='posts.php?delete={$post_id}'>Delete</td>"; 
                                     echo "</tr>";
                                 }     
