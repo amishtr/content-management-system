@@ -19,7 +19,7 @@
                     
                     <!-- Add Category Form -->
                     <div class="col-xs-6">
-                        <?php insert_categories(); ?>
+                        <?php insert_categories($cat_error); ?>
 
                         <form action="" method="POST">
                             <div class="form-group">
@@ -30,19 +30,18 @@
                                 <input class="btn btn-primary" type="submit" name= "submit" value="Add Category">
                             </div>    
                             <div class="form-group">
-                                    <?php echo $cat_error; ?> 
+                                  <!-- does not work!  <?php echo $cat_error; ?> -->
                             </div>                            
                         </form><br>
 
                         <?php 
-                        // Update and include query
-                        if(isset($_GET['edit'])) {
+                            // Update and include query
+                            if(isset($_GET['edit'])) {
 
-                            $cat_id = $_GET['edit'];
+                                $cat_id = $_GET['edit'];
 
-                            include "includes/update_categories.php";
-                        }
-                        
+                                include "includes/update_categories.php";
+                            }                        
                         ?>
 
                     </div><!-- Add Category Form -->

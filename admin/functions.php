@@ -26,6 +26,7 @@ function insert_categories() {
 
         if($cat_title == "" || empty($cat_title)) {
             $cat_error =  "The field can not be empty.";
+            //return $cat_error;
         } else {
             $query = "INSERT INTO categories (cat_title)"; 
             $query .= "VALUES('{$cat_title}') ";
