@@ -1,5 +1,18 @@
 <?php 
 
+function confirmQuery($result) {
+
+    global $connection;
+    
+    if(!$result) {
+        die('QUERY FAILED! ' . mysqli_error($connection));
+
+    } else {
+
+        return $result;
+    }
+}
+
 $cat_error = "";
 
 function insert_categories() {

@@ -10,6 +10,7 @@
                                 <th class='text-center'>Tags</th>
                                 <th class='text-center'>Comments</th>
                                 <th class='text-center'>Date</th>
+                                <th class='text-center'></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -40,8 +41,21 @@
                                     echo "<td class='text-center'>{$post_tags}</td>"; 
                                     echo "<td class='text-center'>{$post_comments}</td>"; 
                                     echo "<td class='text-center'>{$post_date}</td>"; 
+                                    echo "<td class='text-center'><a href='posts.php?delete={$post_id}'>Delete</td>"; 
                                     echo "</tr>";
                                 }     
                             ?>                                              
                         </tbody>
                     </table>
+
+                    <?php
+                        // Delete the post depending on id
+                        if(isset($_GET['delete'])) {
+
+                            $delete_post_id = $_GET['delete'];
+
+                            $query = "DELETE FROM posts WHERE post_id = {$delete_post_id}";
+                            $delete_query = mysqli_query($connection, $query);
+
+                        }
+                    ?>
