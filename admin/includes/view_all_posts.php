@@ -27,7 +27,7 @@
                                     $post_title = $row['post_title']; 
                                     $post_category = $row['post_category_id']; 
                                     $post_status = $row['post_status']; 
-                                    $post_image = $row['post_image']; 
+                                    $post_image = $row['post_image'];                                     
                                     $post_tags = $row['post_tags']; 
                                     $post_comments = $row['post_comment_count']; 
                                     $post_date = $row['post_date'];                                                      
