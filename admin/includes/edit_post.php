@@ -67,8 +67,8 @@
           //confirmQuery($update_post);      
 
           if(!$update_post) {
-            //die('QUERY FAILED! ' . mysqli_error($connection));
-            die($query);
+            die('QUERY FAILED! ' . mysqli_error($connection));
+            //die($query);
           }
   }
 
@@ -113,7 +113,7 @@
   </div>
 
   <div class="form-group">
-    <img src="../images/<?php echo $post_image; ?>" width="100"> 
+    <img src="../images/<?php echo $post_image; ?>" width="100"><br><br> 
     <!-- <label for="post_image">Post Image</label> -->
     <input type="file" name="post_image"> 
   </div>
