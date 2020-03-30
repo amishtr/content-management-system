@@ -12,7 +12,6 @@
 
         $post_tags = $_POST['post_tags'];
         $post_content = $_POST['post_content'];
-
         $post_date = date('Y-m-d');
         $post_comment_count = 4;
 
@@ -53,7 +52,7 @@
 
   <div class="form-group">
     <label for="post_image">Post Image</label>
-    <input type="file" name="image">
+    <input type="file" name="post_image">
   </div>
 
   <div class="form-group">
